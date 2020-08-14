@@ -1,3 +1,5 @@
+                                             //Aarzoo's programming
+
 const int motionpin=A0;
 const int ledpin=13;
 const int buzzpin=12; // ledpin,motionpin and buzpin are not changed throughout the process
@@ -12,7 +14,7 @@ pinMode(buzzpin,OUTPUT);
 void loop() {
 // put your main code here, to run repeatedly:
 motionsensvalue=analogRead(motionpin); // reads analog data from motion sensor
-if (motionsensvalue>=20){
+if (motionsensvalue>=40){    //20
 digitalWrite(ledpin,HIGH);
 tone(buzzpin,100); //turns on led and buzzer
 }
